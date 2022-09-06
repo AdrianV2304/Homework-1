@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body, main {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  background-color: #cddbe6c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-left: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.buttons input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  background-color: #f1f1f1;
+  width: 60px;
+  height: 36px;
+  border-radius: 20px;
+  border: 2px solid;
+  margin-right: 8px;
+}
+
+.buttons input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 0;
+  top: -3.2px;
+  background-color: #132B50;
+  border-radius: 20px;
+  border-color: #132B50;
+  transform: scale(.6);
+  transition: .7s ease all;
+}
+
+.buttons input:checked[type="checkbox"]::before {
+  left: 16px;
+}
+
+.buttons label {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  width: 103px;
+  height: 51px;
+  color: white;
+  background-color: #132B50;
+  border-radius: 8px;
+  margin-left: 100px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.user-profile {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.password-field {
+  width: 100%;
+  min-width: 414px;
+  display: flex;
+  align-items: center;
+  position: relative; /*ancoram pozitia copiilor fata de acest parinte*/
+}
+
+.password-field label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.password-field img {
+  position: absolute; /*imaginile se repozitioneaza in functie de pozitia primului parinte*/
+  top: calc(50% + 12px); /*top aranjeaza elementul dupa punct de origine stanga sus*/
+  transform: translate(0px, -50%); /*modifica punctul de origine dupa valoare*/
+}
+
+.password-field img:nth-child(2) {
+  left: 16px;
+}
+
+.password-field img:last-child {
+  right: 0px;
+}
+.password-field input {
+  margin-top: 8px;
+  width: 100%;
+  max-width: 370px;
+  border: solid 1px #132B50;
+  border-radius: 8px;
+  padding: 16px 16px 16px 53px;
+  outline: none;
+}
+
+
+
+
+

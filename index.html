@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Login Screen</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1>Enter your password</h1>
+
+        <div class="user-profile">
+          <img src="avatar.svg" alt="avatar" />
+          <div class="user-profile--information">
+            <p>Business Account</p>
+            <p>Sarah Bills</p>
+          </div>
+        </div>
+
+        <div class="password-field">
+          <label>
+            Password
+            <input type="password" name="password" />
+          </label>
+          <img src="lock.svg" alt="lock" />
+          <img src="eye.svg" alt="hidden password" />
+        </div>
+
+        <div class="buttons">
+          <label>
+            <input type="checkbox" name="keepSignIn" />
+            Stay signed in
+          </label>
+          <button type="button">Continue</button>
+        </div>
+
+        <a src="#!">Reset password</a>
+      </div>
+    </main>
+  </body>
+</html>
